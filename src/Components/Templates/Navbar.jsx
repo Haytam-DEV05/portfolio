@@ -10,10 +10,9 @@ export default function Navbar() {
       fixed top-4 left-0 right-0
       backdrop-blur-xl shadow-lg rounded-full
       px-6 md:px-12 border
-      border-(--text-secondary)
+      border-(--text-secondary) z-99
     "
     >
-      {/* Logo */}
       <div className="flex items-center">
         <span
           className="
@@ -27,7 +26,6 @@ export default function Navbar() {
         <h2 className="ml-3 text-lg font-semibold">Haitam Nefal</h2>
       </div>
 
-      {/* Links */}
       <ul
         className="
         hidden md:flex items-center space-x-6
@@ -48,7 +46,6 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {/* Right Side */}
       <div className="flex items-center space-x-4">
         <a
           href="#"
