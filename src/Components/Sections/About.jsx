@@ -40,6 +40,23 @@ export default function About() {
             corporate application, I bring the same level of commitment to
             quality.
           </p>
+
+          <a
+            aria-label="downoald-cv"
+            download
+            href="/CV/Haitam Nefal.pdf"
+            type="submit"
+            className="
+            max-w-fit py-3 rounded-full
+            bg-(--color-primary) px-10
+            hover:bg-(--color-primary-hover)
+            text-white font-medium
+            transition duration-300
+            shadow-lg cursor-pointer
+            "
+          >
+            Downoald Cv
+          </a>
         </div>
 
         <div className="flex justify-center animate-slideRight">
