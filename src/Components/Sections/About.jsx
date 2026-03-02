@@ -59,10 +59,11 @@ export default function About() {
           </a>
         </div>
 
-        <div className="flex justify-center" data-aos="fade-down-left">
+        <div className="flex justify-center overflow-hidden">
           <div
+            data-aos="flip-down"
             className="
-            relative rounded-3xl overflow-hidden
+            rounded-3xl overflow-hidden
             shadow-2xl
             "
           >
@@ -73,15 +74,6 @@ export default function About() {
               w-80 md:w-96 object-cover
               transition duration-500
               hover:scale-105
-              "
-            />
-
-            <div
-              className="
-              absolute inset-0
-              bg-(--color-primary)/10
-              opacity-0 hover:opacity-100
-              transition duration-500
               "
             />
           </div>
