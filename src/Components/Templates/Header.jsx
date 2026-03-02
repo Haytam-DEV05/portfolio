@@ -14,6 +14,7 @@ const Header = () => {
       <About />
       <Projects />
       <Skills />
+      <Contact />
     </>
   );
 };

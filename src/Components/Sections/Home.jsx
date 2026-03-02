@@ -9,7 +9,6 @@ export default function Home() {
       overflow-hidden
       "
     >
-      {/* Badge */}
       <span
         className="
         mb-6 px-4 py-2 rounded-full text-sm font-medium
@@ -21,7 +20,6 @@ export default function Home() {
         🚀 Open for New Projects
       </span>
 
-      {/* Title */}
       <h1
         className="
         w-full text-4xl md:text-7xl font-bold
@@ -33,7 +31,6 @@ export default function Home() {
         Hi, I'm <span className="text-(--color-primary)">Haytam Nefal</span>
       </h1>
 
-      {/* Description */}
       <p
         className="
         max-w-2xl text-lg md:text-xl
@@ -51,10 +48,9 @@ export default function Home() {
         a focus on clean, scalable code.
       </p>
 
-      {/* Buttons */}
       <div className="flex gap-4 animate-fadeIn delay-300">
         <a
-          href="#"
+          href="#projects"
           className="
           px-6 py-3 rounded-full
           bg-(--color-primary)
@@ -67,7 +63,7 @@ export default function Home() {
         </a>
 
         <a
-          href="#"
+          href="#contact"
           className="
           px-6 py-3 rounded-full
           border border-(--color-primary)

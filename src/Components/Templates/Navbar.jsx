@@ -33,16 +33,16 @@ export default function Navbar() {
       "
       >
         <li className="hover:text-(--color-primary) cursor-pointer transition">
-          About
+          <a href="#about">About</a>
         </li>
         <li className="hover:text-(--color-primary) cursor-pointer transition">
-          Projects
+          <a href="#projects">Projects</a>
         </li>
         <li className="hover:text-(--color-primary) cursor-pointer transition">
-          Skills
+          <a href="#skills">Skills</a>
         </li>
         <li className="hover:text-(--color-primary) cursor-pointer transition">
-          Contact
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
