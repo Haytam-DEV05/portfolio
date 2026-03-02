@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav
       className="
-      max-w-6xl mx-auto flex justify-between items-center min-h-16
+      max-w-[90%] mx-auto flex justify-between items-center min-h-16
       bg-(--bg-surface) 
       text-(--text-primary)
       fixed top-4 left-0 right-0

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 body[theme="light"] {
     /* Background */
     --bg-primary: #F8FAFC;
@@ -31,4 +32,8 @@ body[theme="dark"] {
 
     /* Hover */
     --color-primary-hover: #0EA5E9;
+}
+
+html {
+    scroll-behavior: smooth;
 }

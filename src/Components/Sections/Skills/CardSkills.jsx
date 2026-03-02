@@ -3,6 +3,7 @@ import { CiCircleCheck } from "react-icons/ci";
 export default function CardSkills({ skill }) {
   return (
     <div
+    data-aos="zoom-in"
       className="
       group rounded-3xl p-8
       bg-(--bg-surface)

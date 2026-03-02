@@ -1,6 +1,10 @@
 export default function HeaderSection({ title, description }) {
   return (
-    <div className="text-center mb-16">
+    <div
+      className="text-center mb-16"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <p
         className="
         text-sm tracking-widest uppercase mb-3

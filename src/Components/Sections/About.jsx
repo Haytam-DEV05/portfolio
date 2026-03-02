@@ -22,7 +22,7 @@ export default function About() {
         items-center
         "
       >
-        <div className="space-y-6 animate-slideLeft">
+        <div className="space-y-6 animate-slideLeft" data-aos="zoom-out-right">
           <p className="text-lg text-(--text-secondary) leading-relaxed">
             I am{" "}
             <span className="text-(--color-primary) font-semibold">
@@ -59,7 +59,7 @@ export default function About() {
           </a>
         </div>
 
-        <div className="flex justify-center animate-slideRight">
+        <div className="flex justify-center" data-aos="fade-down-left">
           <div
             className="
             relative rounded-3xl overflow-hidden

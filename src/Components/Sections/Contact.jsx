@@ -20,7 +20,7 @@ export default function Contact() {
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
         {/* LEFT SIDE - Info */}
-        <div className="space-y-8 animate-slideLeft">
+        <div className="space-y-8" data-aos="fade-up">
           {/* Email */}
           <div className="flex items-center gap-4">
             <div className="p-4 rounded-xl bg-(--color-primary)/10 text-(--color-primary) text-2xl">
@@ -78,6 +78,7 @@ export default function Contact() {
         </div>
 
         <form
+          data-aos="zoom-out-right"
           className="
           space-y-6 p-8 rounded-3xl
           bg-(--bg-surface)
