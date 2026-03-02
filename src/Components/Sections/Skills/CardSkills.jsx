@@ -13,7 +13,6 @@ export default function CardSkills({ skill }) {
       animate-fadeIn
       "
     >
-      {/* Icon */}
       <div
         className="
         text-4xl mb-6
@@ -25,10 +24,8 @@ export default function CardSkills({ skill }) {
         {skill.icon}
       </div>
 
-      {/* Title */}
       <h3 className="text-xl font-semibold mb-6">{skill.title}</h3>
 
-      {/* Skills List */}
       <ul className="space-y-3">
         {skill.skills.map((ele, index) => (
           <li

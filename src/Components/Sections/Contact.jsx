@@ -19,7 +19,6 @@ export default function Contact() {
       />
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-        {/* LEFT SIDE - Info */}
         <div className="space-y-8" data-aos="fade-up">
           {/* Email */}
           <div className="flex items-center gap-4">
