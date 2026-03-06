@@ -52,7 +52,8 @@ export default function Home() {
     },
   ];
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-(--bg-primary) text-(--text-primary) overflow-hidden pt-10">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-(--bg-primary) text-(--text-primary) overflow-hidden pt-10 relative">
+      <div className="absolute bg-(--color-primary) w-120 h-120 rounded-full blur-3xl opacity-30 top-0"></div>
       <span className="mb-6 px-4 py-2 rounded-full text-sm font-medium bg-(--color-primary)/10 text-(--color-primary) animate-fadeIn">
         🚀 Open for New Projects
       </span>
@@ -71,7 +72,7 @@ export default function Home() {
         a focus on clean, scalable code.
       </p>
 
-      <div className="flex gap-4 animate-fadeIn delay-300">
+      <div className="flex gap-4 animate-fadeIn delay-300 z-90">
         <a
           href="#projects"
           className="px-6 py-3 rounded-full bg-(--color-primary) hover:bg-(--color-primary-hover) text-white font-medium transition duration-300 shadow-lg"
@@ -91,13 +92,13 @@ export default function Home() {
         <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-linear-to-r from-(--bg-surface) to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-linear-to-l from-(--bg-surface) to-transparent z-10" />
 
-        <ul className="flex gap-16 w-max animate-marquee group-hover:[animation-play-state:paused]">
+        <ul className="flex gap-5 md:gap-16 w-max animate-marquee group-hover:[animation-play-state:paused]">
           {[...techStack, ...techStack].map((ele, index) => (
             <li key={index} className="flex items-center justify-center">
               <img
                 src={ele.src}
                 alt={ele.name}
-                className="w-12 h-12 object-contain grayscale hover:grayscale-0 hover:scale-110 transition duration-300"
+                className="w-9 h-9 md:w-12 md:h-12 object-contain grayscale hover:grayscale-0 hover:scale-110 transition duration-300"
               />
             </li>
           ))}

@@ -9,8 +9,8 @@ export default function Theme() {
     document.body.setAttribute("theme", theme);
   }, [theme]);
   return (
-    <div onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-      {theme === "light" ? <FaRegMoon /> : <IoSunnyOutline />}
+    <div onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="cursor-pointer">
+      {theme === "light" ? <FaRegMoon size={23}/> : <IoSunnyOutline size={23}/>}
     </div>
   );
 }
