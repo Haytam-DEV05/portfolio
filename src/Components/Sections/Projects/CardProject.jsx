@@ -55,7 +55,8 @@ export default function CardProject({ project }) {
         {/* Bottom */}
         <div className="flex justify-between items-center pt-4">
           <a
-            href="#"
+            target="_blank"
+            href={project.demo}
             className="
             flex items-center gap-2
             text-(--color-primary)
@@ -69,7 +70,8 @@ export default function CardProject({ project }) {
           </a>
 
           <a
-            href="#"
+            target="_blank"
+            href={project.github}
             className="
             px-4 py-2 rounded-full
             border border-(--color-primary)

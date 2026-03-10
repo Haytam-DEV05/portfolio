@@ -5,17 +5,20 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      image: "/images/haitam.jpeg",
-      stack: ["MySQL", "PHP"],
-      title: "Guestbook App",
+      image: "/images/taskFlow.png",
+      stack: ["React JS", "Supabase"],
+      title: "Task Managment",
+      github: "https://github.com/Haytam-DEV05/taskFlow",
+      demo: "https://task-flow-blush-five.vercel.app/",
       description:
         "A high-performance real-time messaging application featuring data persistence and custom admin controls.",
     },
     {
       id: 2,
-      image: "/images/haitam.jpeg",
-      stack: ["MySQL", "Laravel"],
-      title: "HR Management System",
+      image: "/images/learning.webp",
+      stack: ["React JS", "Supabase"],
+      title: "Platform for Learning",
+      github: "https://github.com/Haytam-DEV05/learnHub",
       description:
         "Scalable corporate solution for tracking resources, employee absences, and automated reporting workflows.",
     },
