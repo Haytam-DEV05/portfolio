@@ -19,6 +19,7 @@ export default function Projects() {
       stack: ["React JS", "Supabase"],
       title: "Platform for Learning",
       github: "https://github.com/Haytam-DEV05/learnHub",
+      demo: "https://learn-hub-ruddy.vercel.app/",
       description:
         "Scalable corporate solution for tracking resources, employee absences, and automated reporting workflows.",
     },
