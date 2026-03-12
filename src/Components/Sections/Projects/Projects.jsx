@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+import { motion } from "motion/react";
 import HeaderSection from "../../Templates/HeaderSection";
 import CardProject from "./CardProject";
 
@@ -25,39 +27,53 @@ export default function Projects() {
     },
   ];
 
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.25,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 60 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6 },
+    },
+  };
+
   return (
     <section
       id="projects"
-      className="
-      py-24 px-6
-      bg-(--bg-primary)
-      text-(--text-primary)
-      "
+      className="py-24 px-6 bg-(--bg-primary) text-(--text-primary)"
     >
       <HeaderSection title="Selected Works" description="Portfolio" />
 
-      {/* Explore Link */}
       <div className="text-center mb-12">
         <a
           href="#"
-          className="
-          inline-block
-          text-(--color-primary)
-          font-medium
-          hover:-translate-x-2
-          transition duration-300
-          "
+          className="inline-block text-(--color-primary) font-medium hover:-translate-x-2 transition duration-300"
         >
           Explore All Projects →
         </a>
       </div>
 
-      {/* Grid */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false }}
+        className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10"
+      >
         {projects.map((project) => (
-          <CardProject key={project.id} project={project} />
+          <motion.div key={project.id} variants={item}>
+            <CardProject project={project} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

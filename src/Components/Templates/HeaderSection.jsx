@@ -1,9 +1,13 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
+
 export default function HeaderSection({ title, description }) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.7 }}
       className="text-center mb-16"
-      data-aos="fade-up"
-      data-aos-duration="1500"
     >
       <p
         className="
@@ -21,7 +25,6 @@ export default function HeaderSection({ title, description }) {
         text-(--text-primary)
         max-w-3xl mx-auto
         leading-tight
-        animate-slideUp
         "
       >
         {title}
@@ -32,9 +35,8 @@ export default function HeaderSection({ title, description }) {
         mt-6 h-1 w-20 mx-auto
         bg-(--color-primary)
         rounded-full
-        animate-fadeIn
         "
       />
-    </div>
+    </motion.div>
   );
 }
